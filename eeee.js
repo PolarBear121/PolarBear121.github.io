@@ -1,36 +1,8 @@
-$(document).ready(() => {
+$(document).ready(() =>
+{
+    $("#kk").click(() =>
+    {  
+        alert("searched")
+})
 
-    $("#email-input").trigger("focus")
-
-    //handle the focus 
-
-    $("input").focus(function(){
-        console.log(this)
-        $(this).addClass("colored-border")
-
-    });//end focus
-
-     $("input").focusout(function(){
-
-        $(this).removeClass("colored-border")
-
-    });//end focus
-
-    $("form").submit((e)=>{
-
-        e.preventDefault();
-
-        alert("user logged in successfully")
-
-    })
-
-    $("button").click(() =>{
-        alert("Navigation button")
-    })
-
-
-
-
-
-
-}) // end doc ready
+})
